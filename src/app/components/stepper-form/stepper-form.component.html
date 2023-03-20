@@ -1,0 +1,68 @@
+<form class="stepper-form" [formGroup]="form" (ngSubmit)="onSubmit()">
+    <ng-template [ngIf]="step === 1" formGroupName="userName">
+        <div class="stepper-form__group"
+            [ngClass]="{'stepper-form__group--invalid': isFieldValid('userName.firstName')}">
+            <label>
+                <span>First Name</span>
+                <input formControlName="firstName" type="text" placeholder="Your first name">
+            </label>
+            <span *ngIf="isFieldValid('userName.firstName')" class="stepper-form__error-message">This field is
+                required</span>
+        </div>
+        <div class="stepper-form__group"
+            [ngClass]="{'stepper-form__group--invalid': isFieldValid('userName.lastName')}">
+            <label>
+                <span>Last Name</span>
+                <input formControlName="lastName" type="text" placeholder="Your last name">
+            </label>
+            <span *ngIf="isFieldValid('userName.lastName')" class="stepper-form__error-message">This field is
+                required</span>
+        </div>
+    </ng-template>
+    <ng-template [ngIf]="step === 2" formGroupName="userContacts">
+        <div class="stepper-form__group"
+            [ngClass]="{'stepper-form__group--invalid': isFieldValid('userContacts.email')}">
+            <label>
+                <span>Email</span>
+                <input formControlName="email" type="text" placeholder="Your email">
+            </label>
+            <span *ngIf="isFieldValid('userContacts.email')" class="stepper-form__error-message">This field is required
+                and must be valid</span>
+        </div>
+        <div class="stepper-form__group"
+            [ngClass]="{'stepper-form__group--invalid': isFieldValid('userContacts.phoneNumber')}">
+            <label>
+                <span>Phone</span>
+                <input formControlName="phoneNumber" type="number" placeholder="Your phone number">
+            </label>
+            <span *ngIf="isFieldValid('userContacts.phoneNumber')" class="stepper-form__error-message">This field is
+                required</span>
+        </div>
+    </ng-template>
+    <ng-template [ngIf]="step === 3" formGroupName="userAddress">
+        <div class="stepper-form__group"
+            [ngClass]="{'stepper-form__group--invalid': isFieldValid('userAddress.address')}">
+            <label>
+                <span>Address</span>
+                <input formControlName="address" type="text" placeholder="Street Address">
+            </label>
+            <span *ngIf="isFieldValid('userAddress.address')" class="stepper-form__error-message">This field is
+                required</span>
+        </div>
+        <div class="stepper-form__group" [ngClass]="{'stepper-form__group--invalid': isFieldValid('userAddress.age')}">
+            <label>
+                <span>Age</span>
+                <input formControlName="age" type="number" placeholder="Your Age">
+            </label>
+            <span *ngIf="isFieldValid('userAddress.age')" class="stepper-form__error-message">This field is
+                required</span>
+        </div>
+    </ng-template>
+
+    <div class="stepper-form__buttons" [ngClass]="{'stepper-form__buttons--align': step === 1}">
+        <button *ngIf="step !== 1" (click)="goBack()" class="stepper-form__buttons--back" type="button">Back</button>
+        <button *ngIf="step !== 3" (click)="goNext()" class="stepper-form__buttons--next" type="button">Next</button>
+        <button *ngIf="step === 3" class="stepper-form__buttons--submit" type="submit"
+            [disabled]="form.invalid">Submit</button>
+    </div>
+</form>
