@@ -1,27 +1,26 @@
-# AngularFormSteps
+## :pushpin: Multi-step form Angular
+#### :memo: Description: 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
+Multi-step form with validation made by Angular framework.
+___
 
-## Development server
+#### :link: Live Demo: 
+[Multi-step form Angular](https://vlad-yermolayev.github.io/multi-step-form-angular/)
+___
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+#### :rocket: Technologies Used
 
-## Code scaffolding
+![HTML](https://img.shields.io/badge/html-e44d26.svg?&style=for-the-badge&logo=html5&logoColor=fff "HTML")&nbsp;
+![CSS](https://img.shields.io/badge/css-0692c1.svg?&style=for-the-badge&logo=css3&logoColor=fff "CSS")&nbsp;
+![SASS](https://img.shields.io/badge/sass-cf649a.svg?&style=for-the-badge&logo=sass&logoColor=fff "SASS")&nbsp;
+![BEM](https://img.shields.io/badge/bem-17a1e6.svg?&style=for-the-badge&logo=bem&logoColor=fff "BEM")&nbsp;
+![JavaScript](https://img.shields.io/badge/javascript-f7e018.svg?&style=for-the-badge&logo=javascript&logoColor=fff "JavaScript")&nbsp;
+![TypeScript](https://img.shields.io/badge/typescript-3178c6.svg?&style=for-the-badge&logo=typescript&logoColor=fff "TypeScript")&nbsp;
+![Angular](https://img.shields.io/badge/angular-c3002f.svg?&style=for-the-badge&logo=angular&logoColor=fff "Angular")&nbsp;
+![Redux](https://img.shields.io/badge/redux-764abc.svg?&style=for-the-badge&logo=redux&logoColor=fff "Redux")&nbsp;
+![RxJS](https://img.shields.io/badge/rxjs-d81b60.svg?&style=for-the-badge&logo=rxjs&logoColor=fff "RxJS")&nbsp;
+___
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+#### :envelope: Contacts
+* LinkedIn: [@vlad-yermolayev](https://www.linkedin.com/in/vlad-yermolayev/)
+* Telegram: [@vlad_yermolayev](https://t.me/vlad_yermolayev)
